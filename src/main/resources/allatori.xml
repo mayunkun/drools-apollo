@@ -1,0 +1,18 @@
+<config>
+    <input>
+        <jar in="drools-apollo-0.0.1-SNAPSHOT.jar" out="drools-apollo-0.0.1-SNAPSHOT.jar"/>
+    </input>
+
+    <keep-names>
+        <class access="protected+">
+            <field access="protected+"/>
+            <method access="protected+"/>
+        </class>
+    </keep-names>
+
+    <ignore-classes>
+        <class template="class *springframework*" />
+    </ignore-classes>
+
+    <property name="log-file" value="log.xml"/>
+</config>
